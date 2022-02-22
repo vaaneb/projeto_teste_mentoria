@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   resources :usuarios
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :places 
+  resources :expertises
+  resources :mentors
+  resources :socialnetworks
+  resources :abilitys
 end
