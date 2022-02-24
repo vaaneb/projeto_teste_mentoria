@@ -18,21 +18,21 @@ class UsuariosControllerTest < ActionDispatch::IntegrationTest
     assert_response :created
   end
 
-  test "should show usuario" do
-    get usuario_url(@usuario), as: :json
-    assert_response :success
-  end
+  #test "should show usuario" do
+   # get usuario_url(@usuario), as: :json
+    #assert_response :success
+  #end
 
-  test "should update usuario" do
-    patch usuario_url(@usuario), params: { usuario: {  } }, as: :json
-    assert_response :success
-  end
+  #test "should update usuario" do
+   # patch usuario_url(@usuario), params: { usuario: {  } }, as: :json
+    #assert_response :success
+ # end
 
-  test "should destroy usuario" do
-    assert_difference("Usuario.count", -1) do
-      delete usuario_url(@usuario), as: :json
-    end
+  #test "should destroy usuario" do
+   # assert_difference("Usuario.count", -1) do
+    #  delete usuario_url(@usuario), as: :json
+    #end
 
-    assert_response :no_content
-  end
+    #assert_response :no_content
+  #end
 end
